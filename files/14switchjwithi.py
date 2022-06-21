@@ -1,14 +1,15 @@
 def replace(sample):
     with open(sample, 'r') as f:
-        a = f.read().split()
+        a = f.read()
         for i in a:
-            length = len(i)
-            for j in range(0, length):
-                if i[j] != 'i':
-                    print(i[j])
-                elif i[j] == 'i':
-                    b = i[j].replace('i', 'j')
-                    print(b)
+            if i=='j':
+                print('i',end='')
+            else:
+                print(i,end='')
+    return ''
+
+
+
 
 
 replace("sample.txt")
