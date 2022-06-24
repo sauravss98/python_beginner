@@ -2,7 +2,7 @@ import re
 
 
 def Colon(text):
-    pattern="[ ][',']['.'+]"
+    pattern="[,. ]"
     x=re.sub(pattern,":",text)
     print(x)
 
