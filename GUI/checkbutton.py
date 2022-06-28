@@ -1,0 +1,15 @@
+from tkinter import *
+root=Tk()
+root.title("Check Button")
+root.geometry('200x200')
+a=IntVar()
+b=IntVar()
+c=IntVar()
+d=Checkbutton(root,text="C",variable="a",onvalue=1,offvalue=0)
+e=Checkbutton(root,text="C++",variable="b",onvalue=1,offvalue=0)
+f=Checkbutton(root,text="JS",variable="c",onvalue=1,offvalue=0)
+d.grid(row=0,column=0)
+e.grid(row=1,column=0)
+f.grid(row=2,column=0)
+
+root.mainloop()

@@ -1,0 +1,16 @@
+from tkinter import *
+def onclick():
+    print(a.get())
+root=Tk()
+root.title("Radio Button")
+a=IntVar()
+b=StringVar()
+rad1=Radiobutton(root,text="C",value=1,variable=a)
+rad2=Radiobutton(root,text="C++",value=2,variable=a)
+rad3=Radiobutton(root,text="JS",value=3,variable=a)
+btn=Button(root,text="Click",command=onclick)
+rad1.grid(row=0,column=0)
+rad2.grid(row=1,column=0)
+rad3.grid(row=2,column=0)
+btn.grid(row=3,column=0)
+root.mainloop()
