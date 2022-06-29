@@ -27,7 +27,7 @@ def LCM():
 
 root = Tk()
 root.title("LCM-GCD")
-root.geometry('400x100')
+root.geometry('300x100')
 label1 = Label(root, text="Enter value of m")
 label2 = Label(root, text="Enter value of n")
 label3=Label(root,text="Choose function: ")
@@ -38,6 +38,7 @@ ans = Label(root)
 combo=Combobox(root)
 combo['values']=["GCD","LCM"]
 combo.current()
+
 combo.grid(row=2,column=1)
 label1.grid(row=0, column=0)
 label2.grid(row=1,column=0)
